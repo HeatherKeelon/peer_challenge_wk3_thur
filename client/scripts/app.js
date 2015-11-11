@@ -28,9 +28,7 @@ myApp.controller('StudentController', ['$scope', '$http', '$filter', function($s
     };
 
     $scope.orderNumber = function(){
-        angular.forEach($scope.classmates, function(classmates){
-            classmates.favnum = parseFloat(classmages.favnum);
-        });
+        console.log($scope.classmates);
         var orderBy=$filter('orderBy');
         $scope.order = function(predicate, reverse) {
             $scope.classmates = orderBy($scope.classmates, predicate, reverse);
